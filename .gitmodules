@@ -1,0 +1,3 @@
+[submodule "src/mycLib"]
+	path = src/mycLib
+	url = git@github.com:therapon/mycLib.git
