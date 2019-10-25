@@ -3,9 +3,11 @@ project(mycClient
         VERSION 1.0.0
         LANGUAGES C CXX)
 
-add_subdirectory(mycLib/src)
+# add_subdirectory(mycLib/src)
+
+find_package(MyCLib REQUIRED)
 
 add_executable(myapp myapp.c)
 target_link_libraries(myapp
         PRIVATE
-            myclib)
+        MyCLib::myclib)
